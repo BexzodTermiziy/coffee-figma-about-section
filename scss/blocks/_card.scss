@@ -1,0 +1,32 @@
+/* Card Section Style */
+.cards{
+    position: relative;
+    display: flex;
+    gap: 125px;
+    background-color: $color-bg;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 256px;
+}
+
+.card__title{
+    font-size: 48px;
+    font-weight: 900;
+    color: #FEFCF7;
+    margin-top: 88px;
+}
+
+.card__text{
+    width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #fefcf7d0;
+    margin-top: 32px;
+}
+
+.card__img{
+    position: relative;
+    top: -80px;
+    border-radius: 10px;
+}

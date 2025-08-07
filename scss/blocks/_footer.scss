@@ -1,0 +1,49 @@
+/* Footer Section Style */
+.footer{
+    margin-top: 8px;
+    background-color: $color-bg;
+    width: 100%;
+}
+
+.footer__section{
+    display: flex;
+    width: 1280px;
+    padding: 47px 85px;
+    align-items: center;
+}
+
+.footer__image{
+    margin-right: 102px;
+}
+
+.footer__list{
+    display: flex;
+    gap: 33px;
+    color: $color-menu;
+    margin-right: 368px;
+}
+
+.footer__item--link{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-menu;
+}
+
+.footer__item--link:hover{
+    color: #0E8784;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.fa-brands{
+    font-size: 18px;
+    color: white;
+}

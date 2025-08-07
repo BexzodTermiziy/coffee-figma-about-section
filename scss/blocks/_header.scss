@@ -1,0 +1,27 @@
+/* Header Section Style */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+.header__list{
+    display: flex;
+    gap: 33px;
+}
+
+.header__item--link{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-menu;
+}
+
+.header__item--link:hover{
+   color: #0E8784;
+   text-decoration: underline;
+   text-underline-offset: 4px;
+}
