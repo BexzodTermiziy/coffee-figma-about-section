@@ -2,18 +2,20 @@
 .headquarters{
     padding: 0 60px;
     margin: 168px 0;
-}
 
-.headquarters__title{
-    font-size: 24px;
-    font-weight: 900;
-    color: #83888F;
-    margin-bottom: 72px;
-}
 
-.headquarters__list{
-    display: flex;
-    gap: 180px;
+
+    &__title{
+        font-size: 24px;
+        font-weight: 900;
+        color: #83888F;
+        margin-bottom: 72px;
+    }
+
+    &__list{
+        display: flex;
+        gap: 180px;
+    }
 }
 
 .item__img{
@@ -34,4 +36,96 @@
     font-weight: 400;
     color: $color-title;
     line-height: 26px;
+}
+
+
+
+@media (max-width:768px){
+    .headquarters{
+        padding: 0 60px;
+        margin: 168px 0;
+    
+    
+    
+        &__title{
+            font-size: 24px;
+            font-weight: 900;
+            color: #83888F;
+            margin-bottom: 72px;
+        }
+    
+        &__list{
+            display: flex;
+            gap: 70px;
+        }
+    }
+
+
+    .item__img{
+        display: block;
+        margin-bottom: 45px;
+    }
+    
+    .item--title{
+        font-size: 24px;
+        font-weight: 900;
+        color: $color-title;
+        margin-bottom: 24px;
+    }
+    
+    .item--text{
+        width: 140px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-title;
+        line-height: 26px;
+    }
+}
+
+
+
+@media (max-width:576px){
+    .headquarters{
+        padding: 0 60px;
+        margin: 168px 0;
+        flex-direction: column;
+        text-align: center;
+    
+    
+    
+        &__title{
+            font-size: 24px;
+            font-weight: 900;
+            color: #83888F;
+            margin-bottom: 72px;
+        }
+    
+        &__list{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+
+    .item__img{
+        display: block;
+        margin-bottom: 45px;
+        margin: 65px auto 47px;
+    }
+    
+    .item--title{
+        font-size: 24px;
+        font-weight: 900;
+        color: $color-title;
+    }
+    
+    .item--text{
+        width: 140px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-title;
+        line-height: 26px;
+        margin: 22px auto 0;
+    }
 }

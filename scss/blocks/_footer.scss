@@ -3,47 +3,158 @@
     margin-top: 8px;
     background-color: $color-bg;
     width: 100%;
-}
 
-.footer__section{
-    display: flex;
-    width: 1280px;
-    padding: 47px 85px;
-    align-items: center;
-}
 
-.footer__image{
-    margin-right: 102px;
-}
+    &__section{
+        display: flex;
+        width: 1280px;
+        padding: 47px 85px;
+        align-items: center;
+    }
 
-.footer__list{
-    display: flex;
-    gap: 33px;
-    color: $color-menu;
-    margin-right: 368px;
-}
+    &__image{
+        margin-right: 102px;
+    }
 
-.footer__item--link{
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: $color-menu;
-}
+    &__list{
+        display: flex;
+        gap: 33px;
+        color: $color-menu;
+        margin-right: 368px;
+    }
 
-.footer__item--link:hover{
-    color: #0E8784;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-}
+    &__item--link{
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $color-menu;
+    }
 
-.socials{
-    display: flex;
-    align-items: center;
-    gap: 24px;
+    &__item--link:hover{
+        color: #0E8784;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    &__socials{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
 }
 
 .fa-brands{
     font-size: 18px;
     color: white;
+}
+
+
+
+@media (max-width:768px){
+    .footer{
+        margin-top: 8px;
+        background-color: $color-bg;
+        width: 100%;
+    
+    
+        &__section{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+        }
+    
+        &__image{
+            margin: 54px auto 32px;
+        }
+    
+        &__list{
+            display: flex;
+            color: $color-menu;
+            margin: 0 auto 65px;
+        }
+    
+        &__item--link{
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $color-menu;
+        }
+    
+        &__item--link:hover{
+            color: #0E8784;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+
+        &__socials{
+            display: inline-block;
+            padding-bottom: 54px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+}
+
+
+@media (max-width:576px){
+    .footer{
+        margin-top: 8px;
+        background-color: $color-bg;
+        width: 100%;
+    
+    
+        &__section{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+        }
+    
+        &__image{
+            margin: 54px auto 48px;
+        }
+    
+        &__list{
+            display: flex;
+            color: $color-menu;
+            margin: 0 auto 65px;
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        &__item--link{
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $color-menu;
+        }
+    
+        &__item--link:hover{
+            color: #0E8784;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+
+        &__socials{
+            padding-bottom: 54px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+
+    .fa-brands{
+        font-size: 30px;
+    }
 }

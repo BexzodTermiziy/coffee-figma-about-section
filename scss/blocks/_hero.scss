@@ -1,24 +1,43 @@
 /* Hero Section Style */
-.hero{
-    background-image: url('../../images/hero-bg.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+.hero__section{
+    background-image: url('../../images/heroImg.png');
+    background-size: cover;
     padding: 116px 85px;
     border-radius: 10px;
-}
 
-.hero__title{
-    font-size: 40px;
-    font-weight: 900;
-    font-family: "Fraunces", serif;
-    color: $color-primary;
-    margin-bottom: 24px;
-}
 
-.hero__text{
-    width: 445px;
-    font-size: 16px;
-    font-weight: 400;
-    color: #fefcf7d0;
-    line-height: 26px;
+    &__title{
+        width: 493px;
+        font-size: 72px;
+        font-weight: 900;
+        font-family: "Fraunces", serif;
+        color: $color-primary;
+        margin-bottom: 32px;
+    }
+
+    &__text{
+        width: 445px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #a8a7a5;
+        line-height: 26px;
+        margin-bottom: 56px;
+    }
+
+    &__link{
+        padding: 17px 30px;
+        background-color: $color-btn;
+        color: $color-primary;
+        font-size: 18px;
+        font-weight: 800;
+        font-family: "Fraunces", serif;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: 0.8s ease;
+    }
+
+    &__link:hover{
+        background-color: #12cfccc2;
+        box-shadow: 2px 2px 3px #256463,  -2px -2px 3px #256463;
+    }
 }

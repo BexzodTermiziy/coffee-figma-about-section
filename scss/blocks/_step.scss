@@ -1,0 +1,91 @@
+/* How it works Section Style */
+.steps__section{
+    position: relative;
+    padding: 100px 80px;
+}
+
+.step__title{
+    font-size: 24px;
+    color: $color-menu;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    width: 760px;
+    border: 2px solid #FDD6BA;
+    background-color: #FDD6BA;
+    position: absolute;
+}
+
+.step__spans{
+    display: flex;
+    gap: 335px;
+    position: relative;
+    top: 26px;
+    z-index: 5;
+}
+
+.step__span{
+    display:block;
+    width: 31px;
+    height: 31px;
+    border: 2px solid #0E8784;
+    background-color: #FEFCF7;
+    border-radius: 31px;
+}
+
+.step__cards{
+    display: flex;
+    gap: 95px;
+    margin-top: 82px;
+}
+
+.step__number{
+    display: inline-block;
+    font-size: 72px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    color: $color-icon;
+    margin-bottom: 38px;
+}
+
+.step-subtitle{
+    width: 255px;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: "Fraunces", serif;
+    color: $color-title;
+    margin-bottom: 43px;
+}
+
+.step__discription{
+    width: 285px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $color-title;
+    line-height: 26px;
+    margin-bottom:68px;
+}
+
+.step__link{
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: $color-btn;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    color: $color-primary;
+    font-family: "Fraunces", serif;
+    transition: 0.8s ease;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.step__link:hover{
+   background-color: #229492dc;
+   box-shadow: 1px 1px 3px rgb(204, 203, 203);
+}
