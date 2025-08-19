@@ -1,5 +1,5 @@
 /* How it works Section Style */
-.steps__section{
+.step{
     position: relative;
     padding: 100px 80px;
 }
@@ -15,10 +15,11 @@
 hr{
     border: none;
     height: 1px;
-    width: 760px;
+    max-width: 760px;
     border: 2px solid #FDD6BA;
     background-color: #FDD6BA;
     position: absolute;
+    width: 100%;
 }
 
 .step__spans{
@@ -31,7 +32,8 @@ hr{
 
 .step__span{
     display:block;
-    width: 31px;
+    max-width: 31px;
+    width: 100%;
     height: 31px;
     border: 2px solid #0E8784;
     background-color: #FEFCF7;
@@ -45,7 +47,7 @@ hr{
 }
 
 .step__number{
-    display: inline-block;
+    margin: 0 auto;
     font-size: 72px;
     font-weight: 900;
     font-family: "Fraunces", serif;
@@ -54,7 +56,7 @@ hr{
 }
 
 .step-subtitle{
-    width: 255px;
+    max-width: 255px;
     font-size: 32px;
     font-weight: 900;
     font-family: "Fraunces", serif;
@@ -63,7 +65,7 @@ hr{
 }
 
 .step__discription{
-    width: 285px;
+    max-width: 285px;
     font-size: 16px;
     font-weight: 400;
     color: $color-title;
@@ -88,4 +90,142 @@ hr{
 .step__link:hover{
    background-color: #229492dc;
    box-shadow: 1px 1px 3px rgb(204, 203, 203);
+}
+
+
+
+//Table
+@media (max-width:768px){
+
+    .step{
+        position: relative;
+        padding: 144px 0 50px;
+
+
+
+        &__title{
+            margin-bottom: 40px;
+        }
+
+        &__number{
+            margin-bottom: 42px;
+        }
+
+        &-subtitle{
+            max-width: 180px;
+            font-size: 28px;
+            margin-bottom: 38px;
+        }
+
+        &__discription{
+            max-width: 223px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 400;
+            color: $color-title;
+            line-height: 25px;
+            margin-bottom:44px;
+        }
+    }
+
+
+    hr{
+        border: none;
+        height: 1px;
+        max-width: 497px;
+        border: 2px solid #FDD6BA;
+        background-color: #FDD6BA;
+        position: absolute;
+        width: 100%;
+    }
+
+
+    .step__spans{
+        display: flex;
+        gap: 202px;
+        position: relative;
+        top: 26px;
+        z-index: 5;
+    }
+
+
+    .step__cards{
+        gap: 50px;
+        margin-top: 48px;
+    }
+
+
+    .step__card{
+        max-width: 223px;
+        width: 100%;
+    }
+
+}
+
+
+
+//Media
+@media (max-width:576px){
+
+    .step{
+        position: relative;
+        padding: 144px 0 50px;
+        margin-top: 500px;
+        text-align: center;
+
+
+
+        &__title{
+            margin-bottom: 80px;
+        }
+
+        &__number{
+            margin-bottom: 24px;
+        }
+
+        &-subtitle{
+            max-width: 327px;
+            font-size: 28px;
+            margin: 24px auto;
+        }
+
+        &__discription{
+            max-width: 327px;
+            width: 100%;
+            font-size: 15px;
+            font-weight: 400;
+            color: $color-title;
+            line-height: 25px;
+            margin: 0 auto;
+        }
+
+        &__link{
+            margin-top: 79px;
+        }
+    }
+
+
+    hr{
+        display: none;
+    }
+
+
+    .step__spans{
+        display: none;
+    }
+
+
+    .step__cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+        margin-top: 48px;
+    }
+
+
+    .step__card{
+        max-width: 327px;
+        width: 100%;
+    }
+
 }

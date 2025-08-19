@@ -8,11 +8,11 @@
     background-image: url(../../images/ourcollection.png);
     background-repeat: no-repeat;
     background-position: center;
+    align-items: center;
+    justify-content: center;
     display: flex;
-    justify-content: space-between;
     gap: 30px;
-    padding-top: 260px;
-    padding-left: 65px;
+    padding-top: 85px;
 }
 
 .collection__card{
@@ -29,8 +29,86 @@
 }
 
 .collection__card__text{
-    width: 255px;
+    max-width: 255px;
     font-size: 16px;
     font-weight: 400;
     color: $color-title;
+}
+
+
+
+@media (max-width:768px){
+    .collection__section{
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    .collection__cards{
+        background-image: url(../../images/ourcollection.png);
+        background-repeat: no-repeat;
+        background-size: 689px auto;
+        background-position:center 130px;
+        gap: 32px;
+        flex-direction: column;
+        padding-top: 203px;
+    }
+
+    .collection__card{
+        margin: 0 auto;
+        display: flex;
+        margin-left:50px;
+    }
+
+    .card__info{
+        margin-left: 36px;
+    }
+
+    .collection__card__title{
+        text-align: start;
+        padding-top: 10px;
+    }
+
+    .collection__card__text{
+        max-width: 282px;
+        text-align: start;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $color-title;
+    }
+}
+
+
+
+@media (max-width:576px){
+
+    .collection__cards{
+        background-image: url(../../images/ourcollection.png);
+        background-repeat: no-repeat;
+        background-size:350px auto;
+        background-position:center 120px;
+        gap: 32px;
+        flex-direction: column;
+        padding-top: 203px;
+    }
+
+    .collection__card{
+        margin: 10px auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card__info{
+        margin: 0;
+    }
+
+    .collection__card__title{
+        padding-top: 10px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .collection__card__text{
+        text-align: center;
+    }
 }

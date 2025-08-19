@@ -1,8 +1,6 @@
 /* Why choose us Section Style */
 
 .why-us{
-    position: relative;
-    width: 100%;
     height: 577px;
     background-color:$color-bg;
     border-radius: 10px;
@@ -12,14 +10,14 @@
 
 .why-us__title{
     font-size: 40px;
-    font-family: "Fraunces", serif;
+    font-family: "Fraunces";
     font-weight: 900;
     color: $color-primary;
     padding-top: 100px;
 }
 
 .why-us__text{
-    width: 530px;
+    max-width: 530px;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -37,7 +35,7 @@
 }
 
 .features__card{
-    width: 350px;
+    max-width: 350px;
     background-color: $color-btn;
     border-radius: 8px;
 }
@@ -50,7 +48,7 @@
 .fa-solid{
     margin-top: 72px;
     margin-bottom: 56px;
-    width: 75px;
+    max-width: 75px;
     height: 72px;
     font-size: 65px;
     color: #FDD6BA;
@@ -65,7 +63,7 @@
 }
 
 .features__text{
-    width: 255px;
+    max-width: 255px;
     font-size: 16px;
     color:#fefcf7b7;
     line-height: 26px;
@@ -73,4 +71,157 @@
     margin-bottom: 24px;
     display: inline-block;
     margin-bottom: 48px;
+}
+
+
+
+//Table
+@media (max-width:768px){
+
+    .why-us{
+        max-width: 688px;
+        height: 573px;
+        background-color:$color-bg;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 200px;
+        margin-top: 144px;
+    }
+
+    .why-us__title{
+        font-size: 32px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        color: $color-primary;
+        padding-top: 56px;
+    }
+
+
+    .why-us__text{
+        max-width: 540px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        color:#fefcf7a8;
+        margin:0 auto;
+        padding-top: 0;
+    }
+
+
+    .features{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 75px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+
+    .features__card{
+        display: flex;
+        max-width: 573px;
+        width: 100%;
+        margin: 0 auto;
+        height: 180px;
+        background-color: $color-btn;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .featured__info{
+        margin-left: 55px;
+    }
+
+
+    .features__title{
+        text-align: start;
+        margin: 0;
+    }
+    
+    .features__text{
+        max-width: 344px;
+        font-size: 15px;
+        color:#fefcf7b7;
+        line-height: 25px;
+        font-weight: 400;
+        margin: 16px auto 0;
+        text-align: start;
+    }
+
+}
+
+
+
+//Media
+@media (max-width:576px){
+
+    .why-us{
+        max-width: 327px;
+        height: 902px;
+        background-color:$color-bg;
+        border-radius: 10px;
+        text-align: center;
+        margin: 144px auto;
+    }
+
+    .why-us__title{
+        font-size: 28px;
+        font-family: "Fraunces";
+        font-weight: 900;
+        color: $color-primary;
+        padding-top: 64px;
+    }
+
+
+    .why-us__text{
+        margin:0 auto;
+        padding-top: 0;
+    }
+
+
+    .features{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-top: 64px;
+        margin: 0 auto;
+        gap: 24px;
+    }
+
+    .features__card{
+        flex-direction: column;
+        max-width: 279px;
+        width: 100%;
+        margin: 0 auto;
+        height: 382px;
+        background-color: $color-btn;
+        border-radius: 8px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .featured__info{
+        margin:0 auto;
+    }
+
+
+    .features__title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: start;
+        margin: 0 auto 16px;
+    }
+    
+    .features__text{
+        max-width: 212px;
+        margin:0 auto;
+        text-align: center;
+    }
+
 }

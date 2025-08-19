@@ -1,5 +1,5 @@
 /* Hero Section Style */
-.hero__section{
+.hero{
     background-image: url('../../images/heroImg.png');
     background-size: cover;
     padding: 116px 85px;
@@ -7,7 +7,7 @@
 
 
     &__title{
-        width: 493px;
+        max-width: 493px;
         font-size: 72px;
         font-weight: 900;
         font-family: "Fraunces", serif;
@@ -16,7 +16,7 @@
     }
 
     &__text{
-        width: 445px;
+        max-width: 445px;
         font-size: 16px;
         font-weight: 400;
         color: #a8a7a5;
@@ -39,5 +39,84 @@
     &__link:hover{
         background-color: #12cfccc2;
         box-shadow: 2px 2px 3px #256463,  -2px -2px 3px #256463;
+    }
+}
+
+
+
+//Table
+@media (max-width:768px){
+
+    .hero{
+        background-image: url('../../images/table-hero.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        max-width: 689px;
+        height: 500px;
+        padding: 104px 0 0 58px;
+        border-radius: 10px;
+
+
+        &__title{
+            max-width: 329px;
+            font-size: 48px;
+            font-weight: 900;
+            font-family: "Fraunces";
+            color: $color-primary;
+            margin-bottom: 24px;
+        }
+
+
+        &__text{
+            max-width: 398px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #a8a7a5;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+//Table
+@media (max-width:576px){
+
+    .hero{
+        background-image: url('../../images/mobile-hero.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        max-width: 527px;
+        height: 500px;
+        padding: 100px 0 0 0;
+        border-radius: 10px;
+        justify-content: center;
+        text-align: center;
+
+
+        &__title{
+            max-width: 329px;
+            font-size: 45px;
+            font-weight: 900;
+            font-family: "Fraunces";
+            color: $color-primary;
+            margin-bottom: 24px;
+            margin: 0 auto;
+        }
+
+
+        &__text{
+            max-width: 398px;
+            font-size: 15px;
+            font-weight: 400;
+            color: #a8a7a5;
+            line-height: 26px;
+            margin-bottom: 40px;
+            margin: 24px auto 50px;
+        }
     }
 }
