@@ -356,6 +356,7 @@ body {
   align-items: center;
   padding-top: 43px;
   padding-bottom: 43px;
+  background-color: red;
 }
 .header__list {
   display: flex;
