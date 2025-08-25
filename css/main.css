@@ -367,6 +367,8 @@ body {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #83888F;
+  transition: all 0.3s ease;
+  background-color: red;
 }
 .header__item--link:hover {
   color: #0E8784;
@@ -1002,7 +1004,7 @@ hr {
   font-size: 40px;
   font-weight: 900;
   font-family: "Fraunces", serif;
-  color: deeppink;
+  color: rgb(139, 0, 74);
   margin-bottom: 24px;
 }
 .about__text {
